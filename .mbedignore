@@ -1,0 +1,11 @@
+
+drivers\usb
+connectivity\cellular\source
+connectivity\drivers
+connectivity\FEATURE_BLE
+connectivity\lorawan
+connectivity\nfc
+connectivity\lwipstack
+connectivity\netsocket
+connectivity\libraries\ppp
+connectivity\nanostack
