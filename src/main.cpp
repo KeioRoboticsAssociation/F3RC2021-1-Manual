@@ -177,8 +177,7 @@ float velocity_rotation_ratio = 0;  //走行中の本体の回転と移動の出
 float velocity = 0;
 
 void set_velocity_rotaion_ratio() {
-  velocity = sqrt(input_x * input_x + input_y * input_y);
-  velocity_rotation_ratio = velocity;
+  velocity_rotation_ratio = 1 - abs(input_z);
 }
 
 int main() {
