@@ -14,8 +14,8 @@ class Stepper {
   Ticker stepTick;
   DigitalOut& _dir;
   DigitalOut& _step;
-  int _stepNum = 0;
-  int stepCounter = 0;
+  volatile int _stepNum = 0;
+  volatile int stepCounter = 0;
 
   void tickFunc();
 };
