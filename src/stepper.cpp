@@ -10,8 +10,9 @@ void Stepper::start(int stepNum, bool dir) {
 }
 
 void Stepper::tickFunc() {
+  // pc.write("tick\n", 5);
   stepCounter++;
-  _stepNum = stepCounter % 2;
+  _step = stepCounter % 2;
   if (stepCounter >= _stepNum * 2) {
     stepTick.detach();
     isMoving = false;
