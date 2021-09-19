@@ -187,7 +187,6 @@ mbedignore_path = path.join(root_dir, '.mbedignore')
 # Get the right mbed folder path, just in case user have multiple MBED frameworks installed through PIO
 platform = env.PioPlatform()
 mbed_os_dir = platform.get_package_dir("framework-mbed")
-mbed_os_dir = mbed_os_dir.replace('\\', '/')
 
 print("\nMBED_OS_DIR: " + mbed_os_dir)
 
